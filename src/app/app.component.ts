@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import {
   trigger,
   state,
@@ -31,14 +30,12 @@ import {
 })
 
 export class AppComponent {
-  items: FirebaseListObservable<any[]>;
   navPressScale: String;
   navPosition;
   navigationState: String;
   navigationTimerState: String;
 
-  constructor(af: AngularFire) {
-    this.items = af.database.list('/items');
+  constructor() {
     this.navPressScale = '0px';
     this.navigationState = 'inactive';
     this.navigationTimerState = 'inactive';

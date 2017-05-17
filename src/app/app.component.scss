@@ -2,8 +2,11 @@
   max-width: 1300px;
   height: 100vh;
   margin: 0 auto;
+  padding: 0 20px;
   position: relative;
   overflow: hidden;
+
+  animation: fade-in 1s ease-in 1 forwards;
 }
 
 nav.trigger {
@@ -148,20 +151,14 @@ nav.trigger {
 }
 
 blockquote {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 150px;
-  margin: -75px 0 0 -25%;
-  z-index: 4;
-  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
   opacity: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
 
-  font-family: Baskerville, serif;
-  font-size: 1.5em;
-
-  animation: fade-in 1.8s ease-in 1.5s 1 forwards;
+  animation: fade-in 1.8s ease-in .7s 1 forwards;
 }
 
 cite {
